@@ -16,6 +16,8 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+
 }
 
 h1,
@@ -49,3 +51,181 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
 }
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+.search-form__fieldset-title{
+  color: #FFF;
+
+font-family: "Fira Sans Condensed";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-bottom: 5px;
+}
+
+
+
+
+.title{
+color: #FFF;
+font-family: Oswald;
+font-size: 75px;
+font-style: normal;
+font-weight: 700;
+line-height: 94%;
+text-transform: uppercase;
+
+}
+
+.content__accent{
+  color: #545050;
+}
+
+.content__card-link{
+  text-decoration: none;
+}
+
+.content__video-card-description-container{
+  color: #FFF;
+font-style: normal;
+}
+
+
+.content__video-card-title{
+
+font-family: Oswald;
+font-size: 30px;
+font-weight: 700;
+line-height: 90%; /* 30px */
+text-transform: uppercase;
+letter-spacing: 0.01em;
+display: block;
+  width: 194px; /* Фиксированная ширина */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.content__video-card-description{
+
+font-family: "Fira Sans Condensed";
+font-size: 17px;
+font-weight: 400;
+line-height: 80%;
+letter-spacing: 0.06em;
+
+}
+
+
+
+
+.content{
+  width: 1140px;
+  display: grid;
+  grid-template-columns: 711px 1fr;
+  margin: auto;
+  gap: 30px;
+  align-items: end;
+}
+
+
+
+.result__video-container {
+  position: relative; /* Создаем родительский контейнер с относительным позиционированием */
+  width: 100%; /* Контейнер занимает всю ширину родителя */
+  margin-bottom: 16px;
+  padding-bottom: 54.2897328%; /* Соотношение сторон 16:9 (9 / 16 * 100) */
+  overflow: hidden; /* Скрывает видео, если оно выходит за границы контейнера */
+}
+
+.result__video {
+  position: absolute; /* Абсолютное позиционирование для растягивания */
+  top: 0;
+  left: 0;
+  width: 100%; /* Видео растягивается по ширине контейнера */
+  height: 100%; /* Видео растягивается по высоте контейнера */
+  object-fit: cover; /* Заполняет контейнер, сохраняя пропорции */
+}
+
+
+
+.search-form{
+display: flex;
+justify-content: space-between;
+align-items: start;
+
+}
+
+.search-form__fieldset{
+  border: none;
+}
+
+.search-form__checkbox-list{
+  display: flex;
+  gap: 15px;
+}
+
+.content__list{
+    height: 298px; /* Задаем фиксированный вертикальный размер */
+    overflow-y: auto; /* Включаем вертикальную прокрутку при переполнении */
+
+}
+
+.content__details{
+  width: 100%;
+  max-width: 399px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+
+
+}
+
+.content__list{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+
+}
+
+.content__video-card{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.content__video-card-description-container{
+  flex-grow:1;
+
+}
+
+.content__video-card-thumbnail {
+  width: 194px; 
+  height: 103px; 
+  object-fit: cover; 
+  object-position: center; 
+  flex-shrink: 0; 
+}
+
+
+
+
